@@ -195,15 +195,6 @@ extension ViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
       return
     }
 
-    for characteristic in characteristics {
-
-      if characteristic.uuid.isEqual(heartRateCharacteristicUUID) {
-
-        peripheral.setNotifyValue(true, for: characteristic)
-      }
-
-    }
-
   }
 
   func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
@@ -213,13 +204,6 @@ extension ViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
       return
     }
 
-    if characteristic.uuid.isEqual(heartRateCharacteristicUUID) {
-
-      if let _ = characteristic.value {
-
-      }
-
-    }
   }
 
   func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateFor characteristic: CBCharacteristic, error: Error?) {
@@ -240,13 +224,14 @@ extension ViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
     print("Peripheral Disconnected")
     self.cleanup()
 
-
   }
 }
 
 
 extension ViewController: DeviceListTableViewDelegate {
+
   func didSelectDevice(_ device: CBPeripheral) {
     centralManager?.connect(device, options: nil)
   }
+
 }
