@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E12E4AD1EC1F570008E4BD8 /* ExampleBeacons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleBeacons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E12E4AD1EC1F570008E4BD8 /* ExampleBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E12E4B01EC1F570008E4BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E12E4B21EC1F570008E4BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E12E4B51EC1F570008E4BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		4E12E4A41EC1F570008E4BD8 = {
 			isa = PBXGroup;
 			children = (
-				4E12E4AF1EC1F570008E4BD8 /* ExampleBeacons */,
+				4E12E4AF1EC1F570008E4BD8 /* ExampleBluetooth */,
 				4E12E4AE1EC1F570008E4BD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		4E12E4AE1EC1F570008E4BD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E12E4AD1EC1F570008E4BD8 /* ExampleBeacons.app */,
+				4E12E4AD1EC1F570008E4BD8 /* ExampleBluetooth.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E12E4AF1EC1F570008E4BD8 /* ExampleBeacons */ = {
+		4E12E4AF1EC1F570008E4BD8 /* ExampleBluetooth */ = {
 			isa = PBXGroup;
 			children = (
 				4E12E4B01EC1F570008E4BD8 /* AppDelegate.swift */,
@@ -67,15 +67,16 @@
 				4E12E4B91EC1F570008E4BD8 /* LaunchScreen.storyboard */,
 				4E12E4BC1EC1F570008E4BD8 /* Info.plist */,
 			);
+			name = ExampleBluetooth;
 			path = ExampleBeacons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E12E4AC1EC1F570008E4BD8 /* ExampleBeacons */ = {
+		4E12E4AC1EC1F570008E4BD8 /* ExampleBluetooth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E12E4BF1EC1F570008E4BD8 /* Build configuration list for PBXNativeTarget "ExampleBeacons" */;
+			buildConfigurationList = 4E12E4BF1EC1F570008E4BD8 /* Build configuration list for PBXNativeTarget "ExampleBluetooth" */;
 			buildPhases = (
 				4E12E4A91EC1F570008E4BD8 /* Sources */,
 				4E12E4AA1EC1F570008E4BD8 /* Frameworks */,
@@ -85,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = ExampleBeacons;
+			name = ExampleBluetooth;
 			productName = ExampleBeacons;
-			productReference = 4E12E4AD1EC1F570008E4BD8 /* ExampleBeacons.app */;
+			productReference = 4E12E4AD1EC1F570008E4BD8 /* ExampleBluetooth.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4E12E4A81EC1F570008E4BD8 /* Build configuration list for PBXProject "ExampleBeacons" */;
+			buildConfigurationList = 4E12E4A81EC1F570008E4BD8 /* Build configuration list for PBXProject "ExampleBluetooth" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -120,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E12E4AC1EC1F570008E4BD8 /* ExampleBeacons */,
+				4E12E4AC1EC1F570008E4BD8 /* ExampleBluetooth */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +275,7 @@
 				INFOPLIST_FILE = ExampleBeacons/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.identitat.ExampleBeacons;
+				PRODUCT_BUNDLE_IDENTIFIER = com.identitat.ExampleBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -290,7 +291,7 @@
 				INFOPLIST_FILE = ExampleBeacons/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.identitat.ExampleBeacons;
+				PRODUCT_BUNDLE_IDENTIFIER = com.identitat.ExampleBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -300,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E12E4A81EC1F570008E4BD8 /* Build configuration list for PBXProject "ExampleBeacons" */ = {
+		4E12E4A81EC1F570008E4BD8 /* Build configuration list for PBXProject "ExampleBluetooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E12E4BD1EC1F570008E4BD8 /* Debug */,
@@ -309,13 +310,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E12E4BF1EC1F570008E4BD8 /* Build configuration list for PBXNativeTarget "ExampleBeacons" */ = {
+		4E12E4BF1EC1F570008E4BD8 /* Build configuration list for PBXNativeTarget "ExampleBluetooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E12E4C01EC1F570008E4BD8 /* Debug */,
 				4E12E4C11EC1F570008E4BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
