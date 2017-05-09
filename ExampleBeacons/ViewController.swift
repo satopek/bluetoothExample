@@ -215,8 +215,8 @@ extension ViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
 
     if characteristic.uuid.isEqual(heartRateCharacteristicUUID) {
 
-      if let _ = characteristic.value {
-
+      if let data = characteristic.value {
+        self.labelData.text = ("\(data[1])")
       }
 
     }
