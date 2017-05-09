@@ -12,6 +12,8 @@
 		4E12E4B61EC1F570008E4BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E12E4B41EC1F570008E4BD8 /* Main.storyboard */; };
 		4E12E4B81EC1F570008E4BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E12E4B71EC1F570008E4BD8 /* Assets.xcassets */; };
 		4E12E4BB1EC1F570008E4BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E12E4B91EC1F570008E4BD8 /* LaunchScreen.storyboard */; };
+		4E12E4C31EC1F9FE008E4BD8 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12E4C21EC1F9FE008E4BD8 /* Services.swift */; };
+		4E12E4C71EC1FDA1008E4BD8 /* DeviceListTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12E4C51EC1FDA1008E4BD8 /* DeviceListTableViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4E12E4B71EC1F570008E4BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E12E4BA1EC1F570008E4BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E12E4BC1EC1F570008E4BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E12E4C21EC1F9FE008E4BD8 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		4E12E4C51EC1FDA1008E4BD8 /* DeviceListTableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListTableViewManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				4E12E4B01EC1F570008E4BD8 /* AppDelegate.swift */,
 				4E12E4B21EC1F570008E4BD8 /* ViewController.swift */,
+				4E12E4C51EC1FDA1008E4BD8 /* DeviceListTableViewManager.swift */,
+				4E12E4C21EC1F9FE008E4BD8 /* Services.swift */,
 				4E12E4B41EC1F570008E4BD8 /* Main.storyboard */,
 				4E12E4B71EC1F570008E4BD8 /* Assets.xcassets */,
 				4E12E4B91EC1F570008E4BD8 /* LaunchScreen.storyboard */,
@@ -96,7 +102,7 @@
 				TargetAttributes = {
 					4E12E4AC1EC1F570008E4BD8 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 266MTFXX5L;
+						DevelopmentTeam = PN57WAKKXJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E12E4B31EC1F570008E4BD8 /* ViewController.swift in Sources */,
+				4E12E4C31EC1F9FE008E4BD8 /* Services.swift in Sources */,
+				4E12E4C71EC1FDA1008E4BD8 /* DeviceListTableViewManager.swift in Sources */,
 				4E12E4B11EC1F570008E4BD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +269,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 266MTFXX5L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PN57WAKKXJ;
 				INFOPLIST_FILE = ExampleBeacons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.identitat.ExampleBeacons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +285,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 266MTFXX5L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PN57WAKKXJ;
 				INFOPLIST_FILE = ExampleBeacons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.identitat.ExampleBeacons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
