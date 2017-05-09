@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ExampleBeacons.xcodeproj">
+      location = "self:/Users/joan/development/ExampleBeacons/ExampleBluetooth.xcodeproj">
    </FileRef>
 </Workspace>

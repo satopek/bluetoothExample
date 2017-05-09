@@ -21,7 +21,7 @@ class ViewController: UIViewController {
   var peripherals: [CBPeripheral] = []
   var discoveredPeripheral: CBPeripheral?
 
-  var requiredBeacon = "OnePlus2"
+  var bluetoothEmitter = "OnePlus2"
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -141,9 +141,9 @@ extension ViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
       }
     }
 
-    if unique && (peripheral.name == requiredBeacon) {
+    if unique && (peripheral.name == bluetoothEmitter) {
+      
       peripherals.append(peripheral)
-
       self.tableViewManager.updateTableView(tableView: tableView, withDeviceList: peripherals)
 
     }
