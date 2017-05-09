@@ -247,6 +247,6 @@ extension ViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
 
 extension ViewController: DeviceListTableViewDelegate {
   func didSelectDevice(_ device: CBPeripheral) {
-    centralManager?.connect(device, options: nil)
+    connectToPeripheral(device)
   }
 }
